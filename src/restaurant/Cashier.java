@@ -16,4 +16,19 @@ public class Cashier extends Staff {
     public Cashier(){
         this.job = "收银员";
     }
+
+    @Override
+    public void startWork() {
+        System.out.println(job + name + "上班打卡");
+    }
+
+    @Override
+    public void endWork() {
+        System.out.println(job + name + "下班打卡");
+    }
+
+    @Override
+    public void doWork() {
+        System.out.println(job + name + "开始工作");
+    }
 }

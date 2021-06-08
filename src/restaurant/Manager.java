@@ -16,4 +16,19 @@ public class Manager extends Staff {
     public Manager(){
         this.job = "大堂经理";
     }
+
+    @Override
+    public void startWork() {
+        System.out.println(job + name + "上班打卡");
+    }
+
+    @Override
+    public void endWork() {
+        System.out.println(job + name + "下班打卡");
+    }
+
+    @Override
+    public void doWork() {
+        System.out.println(job + name + "开始工作");
+    }
 }
